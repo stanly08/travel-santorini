@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url("torini.jpg");
+            background-repeat: no-repeat;
+            image-rendering: auto;
+            justify-content: center;
+            margin: 50px;
+            background-size: cover;
+            padding: auto;
+        }
+        h1{
+            display: grid;
+            text-align: center;
+            justify-content: center;
+            color: white;
+            font-size: 1cm;
+        }
+        form{
+            border: 2px solid black;
+            border-radius: 15px;
+            align-items: start;
+            display: grid;
+            width: 600px;
+            background-color: lightgray ;
+            height: 22cm;
+            justify-content: left;
+            margin: auto;
+            background-color: black;
+            opacity: 100%;
+            color: wheat;
+            opacity: 100%;
+        }
+        input{
+        border-radius: 15px;
+        margin-top: 8px;
+        margin-right: 1.2cm;
+        width: 410px;
+        padding: 5px 30px;
+        color: black;
+        font-size: 13px;
+    }
+    label{
+        margin-left: 3cm;
+        color: white;
+        font-size: .4cm;
+        margin-top: 20px;
+    }
+          select{
+            margin-top: 8px;
+            border-radius: 15px;
+            width: 410px;
+            padding: 5px 30px;
+            color: black;
+            font-size: 13px;
+          }
+        button{
+        border-radius: 18px;
+        align-items: center;
+        margin-left: 600px;
+        width: 4.5cm;
+        margin-top: 1cm;
+        margin-left: 46%;
+        padding: 5px 19px;
+        font-size: 16px;
+        color: black;
+        }
+        button::hover{
+            color: blue;
+        }
+        p{
+            align-items: center;
+            margin-left: 180px;
+        }
+        .login{
+            color: black;
+            margin-top: -1cm ;
+            margin-left: -1.4%;
+
+        }
+        .submit{
+            color: black;
+            margin-left: -3%;
+        }
+        p{
+            align-items: center;
+            margin-left: 43%;
+            color: white;
+            font-size: 18px;
+            margin-top: 1.6cm;
+        }
+        b{
+            color: black;
+        }
+        h2{
+            font-size: .8cm;
+            align-items: center;
+            margin-left: 41.5%;
+        }
+        .bar{
+            margin-left: 2.5cm;
+        }
+        
+
+    </style>
+    <title>sign up</title>
+</head>
+<body>
+    <div>
+        <h2><b>Travel Santorini</b></h2>
+        <div class="#">
+            <h1><b>Sign up</b></h1>
+            <div class="#">
+                <form action="#">
+                    <div class="firstname">
+                        <label for="Fn">First name:</label>
+                        <div class="bar">
+                            <input type="text" placeholder="Enter first name" id="Fn" required/>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="secondname">
+                        <label for="Sn">Second name:</label>
+                        <div class="bar">
+                            <input type="text" placeholder="Enter Second name" id="Sn">
+                        </div>
+                        
+    
+                    </div>
+                    
+                    <div class="lastname">
+                        <label for="Ln">Last name:</label>
+                        <div class="bar">
+                            <input type="text" placeholder="Enter last name" id="Ln" required/>
+                        </div>
+                        
+    
+                    </div>
+    
+                    <div class="gender">
+                        <label for="gender">Gender:</label>
+                        <div class="bar">
+                            <select name="gender" id="gn">
+                                <option value="none">select</option>
+                                <option value="male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Not say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        
+    
+                    </div>
+    
+                    <div class="dateofbirth">
+                        <label for="DOB">Date of Birth:</label>
+                        <div class="bar">
+                            <input type="date" placeholder="Enter Date of Birth" id="DOB">
+                        </div>
+                        
+    
+                    </div>
+    
+                    <div class="email">
+                        <label for="eml">Email:</label>
+                        <div class="bar">
+                            <input type="text" placeholder="Enter email address" id="eml">
+                        </div>
+                        
+    
+                    </div>
+    
+                    <div class="phonenumber">
+                        <label for="pn">Phone number:</label>
+                        <div class="bar">
+                            <input type="text" placeholder="Enter phone number" id="pn">
+                        </div>
+                        
+    
+                    </div>
+    
+                    <div class="password">
+                        <label for="pwsd">Password:</label>
+                        <div class="bar">
+                            <input type="text" placeholder="Enter your password" id="pwsd">
+                        </div>
+                        
+    
+                    </div>
+    
+                    <div class="password">
+                        <label for="pwsd">Password:</label>
+                        <div class="bar">
+                            <input type="text" placeholder="Confirm your password" id="pwsd">
+                        </div>
+                        
+    
+                    </div>
+    
+                    <div class="submit">
+                        <button value="submit"><a href="profile.html"><b>Create account</b></a></button>
+    
+                    </div>
+                
+                </form>
+                <p><strong>Already have an account?</strong></p> 
+    
+                <div class="login">
+                    <button value="login"><a href="login.html"><b>Log in</b></a></button>
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

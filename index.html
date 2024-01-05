@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
+    <style>
+          body{
+            background-image: url(santorini.jpeg);
+            background-repeat: no-repeat;
+            image-rendering: auto;
+            justify-content: center;
+            margin: 45px;
+            background-size: cover;
+
+          }
+          h1{
+            text-align: center;
+            font-family:  Georgia, 'Times New Roman', Times, serif;
+            text-decoration: double;
+            text-shadow: 8px 7px 8px;
+            font-size: 2cm;
+            
+          }
+          h1::first-letter{
+            font-size: 3cm;
+            color: darkblue;
+            font-style: italic;
+            text-shadow :none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          }
+          ul{
+            text-align: center;
+            margin :0px;
+            padding: 0%;
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            align-items: stretch;
+            align-content: stretch;
+            flex-direction: column;
+            height: 160px;
+          }
+          ul li{
+            float: left;
+            width: 250px;
+            height: 30px;
+            background-color: brown;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 2px;
+          }
+          ul li a{
+            display: block;
+            text-decoration: none;
+            
+          }
+          ul li ul li{
+            display: none;
+
+          }
+          ul li:hover{
+            display: block;
+            background-color: gray;
+          }
+          ul li ul li:hover{
+            display: block;
+          }
+          ul li:hover ul li{
+            display: block;
+          }
+          h2{
+            display: inline-flex;
+            height: 20px;
+            align-items: center;
+            text-align: center;
+            margin-left: 65px;
+          }
+          form{
+            border-radius: 20px;
+            justify-content: space-between;
+            align-items: center;
+            display: grid;
+            border: 4px solid brown;
+            
+
+          }
+          .hotdeals{
+            border-radius: 15px;
+            background-color: lightgrey;
+            opacity: 80%;
+            color: red;
+            text-align: center;
+            border: 2px solid black;
+            margin: 13px;
+          }
+          b{
+            background-color: none;
+            color: white;
+          }
+          h4{
+            color: black;
+          }
+          .checked{
+            color: orange;
+          }
+          
+          .formfill{
+            border: 2px solid black;
+            border-radius: 10px;
+            align-items: start;
+            margin: 30px;
+            display: grid;
+            width: 300px;
+            background-color: lightgray;
+            opacity: 80%;
+          }
+          label{
+            margin: 12px;
+          }
+          input{
+            margin: 6px;
+          }
+          select{
+            margin: 6px;
+          }
+          button{
+            border-radius: 6px;
+            align-items: center;
+            margin: 5px 105px;
+            color: brown;
+            background-color: bisque;
+          }
+          
+          
+          .bottom{
+            color: black;
+          }
+          .hot{
+            background-color: black;
+            border: 3px solid brown;
+            border-radius: 15px;
+            float: left;
+            text-align: center;
+            margin: 8px;
+            width: 285px;
+            color: antiquewhite;
+
+          }
+          .hot1{
+            background-color: black;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 285px;
+            float: left;
+            margin: 8px;
+            color: antiquewhite;
+          }
+          .hot2{
+            background-color: black;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 285px;
+            float: left;
+            margin: 8px;
+            color: antiquewhite;
+          }
+          .hot3{
+            background-color: black;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 285px;
+            float: right;
+            margin: 8px;
+            color: antiquewhite;
+          }
+          select{
+            border-radius: 10px;
+          }
+          input{
+            border-radius: 10px;
+          }
+          .christmas{
+            text-align: center;
+            color: black;
+          }
+          button:hover{
+            color: blue;
+          }
+          .about{
+            background-color: lightgray;
+            opacity: 80%;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 1260px;
+            margin-top: 10px;
+
+          }
+          .social{
+            background-color: lightgray;
+            opacity: 80%;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 1260px;
+            margin-top: 10px;
+          }
+          * {
+            box-sizing: border-box;
+          }
+
+
+          .container {
+            position: relative;
+          }
+
+
+          .mySlides {
+            display: none;
+          }
+
+
+          .cursor {
+            cursor: pointer;
+          }
+
+
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+          }
+
+
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+
+
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+
+
+          .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+          }
+
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+
+          .column {
+            float: left;
+            width: 16.66%;
+          }
+
+
+          .demo {
+            opacity: 0.6;
+          }
+
+          .active,
+          .demo:hover {
+            opacity: 1;
+          }
+          .column{
+            float: left;
+            width: 30.333%;
+            align-items: center;
+          }
+          footer{
+            background-color: lightgray;
+            opacity: 80%;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 33.3cm;
+            margin-top: 10px;
+          }
+          .row::after{
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+
+    </style>
+    <title>Navigation bar</title>
+</head>
+<body>
+    <div class="#">
+        <h1><strong>TRAVEL SANTORINI</strong></h1>
+    </div>
+    <div class="#">
+        <ul>
+            <li><a href="#"><b>Home</b></a>
+                <ul>
+                    <li><a href="profile.html"><b>Profile</b></a></li>
+                    <li><a href="sign up.html"><b>Sign up</b></a></li>
+                    <li><a href="login.html"><b>Sign in</b></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><b>News</b></a></li>
+            <li><a href="#"><b>Events</b></a>
+                <ul>
+                    <li><a href="#"><b>Upcoming</b></a></li>
+                    <li><a href="#"><b>Past events</b></a></li>
+                </ul>
+               
+            </li>
+            <li><a href="#"><b>Destinations</b></a>
+              <ul>
+                <li><a href="#"><b>Athens</b></a></li>
+                <li><a href="#"><b>Mykonos</b></a></li>
+                <li><a href="#"><b>Rhodes</b></a></li>
+                <li><a href="#"><b>Paros</b></a></li>
+                <li><a href="#"><b>Chania</b></a></li>
+                <li><a href="#"><b>Meteora</b></a></li>
+              </ul>
+            </li>
+            <li><a href="#"><b>Offers</b></a>
+                <ul>
+                    <li><a href="#"><b>Current offers</b></a></li>
+                    <li><a href="#"><b>New customers</b></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div class="#">
+        <form action="#">
+            <h2><b><i class="glyphicon glyphicon-book"></i> BOOK NOW!</b></h2>
+              <div class="formfill">
+                <label for="Guest nationality">Guest nationality: </label>
+                <select name="Nationality" id="Nationality">
+                    <option value="none">select</option>
+                    <option value="$1350">Algeria</option>
+                    <option value="$1400">Cape Verde</option>
+                    <option value="$1020">Ethiopia</option>
+                    <option value="$900">Djibouti</option>
+                    <option value="$1500">Egypt</option>
+                    <option value="$1310">Kenya</option>
+                    <option value="$1110">Malawi</option>
+                    <option value="$1000">Namibia</option>
+                    <option value="$1235">Nigeria</option>
+                    <option value="$1190">Rwanda</option>
+                    <option value="$1200">South Africa</option>
+                    <option value="$1050">Seychelles</option>
+                    <option value="$975">Senegal</option>
+                    <option value="$945">Tanzania</option>
+                    <option value="$890">Zambia</option>
+                </select>
+
+                <label for="Destination">Destination: </label>
+                <select name="Destination" id="Destination">
+                  <option value="none">select</option>
+                  <option value="#">Athens $1200</option>
+                  <option value="#">Mykonos $1250</option>
+                  <option value="#">Rhodes $1020</option>
+                  <option value="#">Paros $1110</option>
+                  <option value="#">Chania $1190</option>
+                  <option value="#">Meteora $975</option>
+                  <option value="#">Santorini $1000</option>
+                  <option value="#">Thessaloniki $950</option>
+                  <option value="#">Zakynthos $900</option>
+                  <option value="#">Corfu $950</option>
+                </select>
+
+                <label for="Date of travel">Date of travel: </label>
+                <input type="datetime-local" placeholder="Choose date of travel" id="D.O.T" required/>
+
+                <label for="Return date">Return date: </label>
+                <input type="date" placeholder="Return date" id="Rd" required/>
+
+                <label for="Rooms">Number of rooms: </label>
+                <select name="rooms" id="rooms">
+                    <option value="none">select</option>
+                    <option value="#">1 room(1 adult, 0 child)</option>
+                    <option value="#">2 rooms(1 adult, 1 child)</option>
+                    <option value="#">2 rooms(2 adults, 1 child)</option>
+                    <option value="#">3 rooms</option>
+                    <option value="#">4 rooms</option>
+                    <option value="#">5 rooms(many people)</option>
+                </select>
+
+                <div class="button">
+                  <button value="book now"><strong> Book now!</strong></button>
+                </div>
+                
+                
+              </div>
+              <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                    <img src="athens.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                    <img src="cool beach.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                    <img src="corfe.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                    <img src="greek mountain.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                    <img src="santorini.jpeg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                    <img src="" style="width:100%">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                <!-- Image text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <!-- Thumbnail images -->
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="athens.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Athens">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="cool beach.jpg" style="width:100%" onclick="currentSlide(2)" alt="The beach">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="corfe.jpg" style="width:100%" onclick="currentSlide(3)" alt="the corfe">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="greek mountain.jpg" style="width:100%" onclick="currentSlide(4)" alt="The mountain">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="santorini.jpeg" style="width:100%" onclick="currentSlide(5)" alt="the santorini">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="torini.jpg" style="width:100%" onclick="currentSlide(6)" alt="the torini">
+                  </div>
+                </div>
+              </div>
+
+            <div class="hotdeals">
+                <h2><strong>HOT DEALS <i class="glyphicon glyphicon-fire"></i></strong></h2>
+                <p><strong>Don't miss out!</strong></p>
+                <h3 class="christmas">CHRISTMAS DEALS!!!!</b></h3>
+                <div class="hot">
+                    
+                    <h4 class="#"><b><i class="fa fa-map-marker" style="font-size:24px"></i> THE THESSALONIKI</b></h4>
+                    <div class="deals">
+                      <p>WAS <s>1100USD</s></p>
+                      <span>NOW 950USD</span>
+                      <p class="#">Limited offer!!!</p>
+                    </div>
+                </div>
+
+                <div class="hot1">
+                  <h4 class="#"><b><i class="fa fa-map-marker" style="font-size:24px"></i> SANTORINI</b></h4>
+                  <div class="deals">
+                    <p>WAS <s>1350USD</s></p>
+                    <span>NOW 1000USD</span>
+                    <p>Limited offer!!!</p>
+                  </div>
+                </div>
+
+                <div class="hot2">
+                  <h4 class="#"><b><i class="fa fa-map-marker" style="font-size:24px"></i> ZAKYNTHOS</b></h4>
+                  <div class="deals">
+                    <p>WAS <s>1245USD</s></p>
+                    <span>NOW 900USD</span>
+                    <p>Limited offer!!!</p>
+                  </div>
+                </div>
+
+                <div class="hot3">
+                  <h4 class="#"><b><i class="fa fa-map-marker" style="font-size:24px"></i> CORFU</b></h4>
+                  <div class="deals">
+                    <p>WAS <s>1150USD</s></p>
+                    <span>NOW 950USD</span>
+                    <p>Limited offer!!!</p>
+                  </div>
+                </div>
+            </div>
+           
+        </form>
+        <div class="about">
+          <h3><i class="glyphicon glyphicon-user"></i> About us</h3>
+          <p>
+            Travel santorini is a dedicated travel agency that has several partners to offer you the best travel experience one has ever had.
+            It's one of the best travelagencies we have in africa, giving you the best prices and discounts around and best christmas offers just for you and your family.
+
+          </p>
+
+          <p>
+            We have partnered to offer you stopover packages and other benefits offered by airlines.
+            We organise for hotel accommodation in the listed countries of travel.
+            We can source the best of best vehicle ranging from standard to luxury cars for your event. May it be a simple saloon car to top end Limousines for your airport transfers, city - city transfers etc and the best price possible.
+
+          </p>
+
+          <p>
+            Our christmas offers run till early February.
+            <strong>Hurry while offers last!!!</strong></b>
+          </p>
+        </div>
+
+        <div class="social">
+          <h3><i class="material-icons">call</i> Contacts and Social media</h3>
+          <p>For more videos and content check out our Youtube channel <a href="#"><strong><i class="fa fa-youtube" style="font-size:24px;"></i></strong></a></p>
+          <p>For more info visit us on our Facebook page <a href="#"><strong><i class="material-icons">facebook</i></strong></a></p>
+          <p>For more pictures and Catalogue enquiries look up our Instagram page <a href="#"><strong><i class="fa fa-instagram" style="font-size:24px;""></i></strong></a></p>
+          <p>You can email us at <strong>Tours@Travelsantorini.org.com </strong><a href="#"><strong><i class="glyphicon glyphicon-envelope style="font-size:24px;"></i></strong></a></p>
+          <p>For whatsapp enquiries contact us at <a href="#"><strong>+2542200000456</a><i class="material-icons">call</i></strong></p>
+          <p>Tel no; +25472086445478, +23376443765856</p>
+        </div>
+
+        <div class="footer">
+          <footer>
+            
+
+            <div class="row">
+              <hr>
+              <div class="column">
+                <h4><i class="material-icons">call</i> Contacts</h4>
+                <p class="bottom">
+                  <i class="fa fa-map-marker" style="font-size:24px"></i></i> Address : 5th Avenue Office Suites, 8th Floor, Suite No. 8 Ngong Road
+                </p>
+                <p class="bottom">
+                  </a><i class="material-icons">call</i> phone: +23376443765856, +25472086445478
+                </p>
+                <p class="bottom">
+                  <i class="glyphicon glyphicon-envelope"></i> Email: Tours@Travelsantorini.org.com
+                </p>
+                <p class="bottom">
+                  <i class="fa fa-copyright" aria-hidden="true"><strong>Travelsantorini</strong></i>
+                </p>
+                <p class="bottom">
+                  <i class="fa fa-copyright" aria-hidden="true"><strong>@2024</strong></i>
+                </p>
+              </div>
+              
+
+              <div class="column">
+                <h4><i class="material-icons">search</i> Reviews</h4>
+              <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </p>
+              <p class="bottom">
+                Thank you for planning this vacation for us.
+              </p>
+              <p class="bottom">
+                You did a fabulous job. Travelling with kids requires a lot of mindfulness, but you had it all covered!
+              </p>
+              <p class="bottom">
+                Every one of your drivers and tour agents were on time, very presentable, professional, courteous and friendly.
+              </p>
+              <p class="bottom">
+                <strong>Lisa</strong>
+              </p>
+              </div>
+              <div class="column">
+                <h4><i class="fa fa-bars"></i>Legacy</h4>
+                <p>
+                  Having been at the frontline in delivering best and competitive services to our customers out there, TravelSantorini was nominated for the travvy award in the year 2023.
+                </p>
+                <p>
+                  We are thankful for the support you have shown us throughout the time we have been able to serve you.
+                </p>
+                <p>
+                  Asante sana na Karibuni sana
+                </p>
+                <p>
+                  #<strong>TEAM AFRICA</strong>
+                </p>
+                <div class="award">
+                  <image src="award image.png" alt="award">
+                </div>
+              </div>
+            </div>
+          </footer>
+         
+    </div>
+    
+</body>
+</html>

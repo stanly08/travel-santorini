@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<style>
+    body{
+        background-image: url("greek mountain.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1{
+        text-rendering: optimizeLegibility;
+        text-align: center;
+        margin-top: 0;
+        font-size: 1cm;
+        color: white;
+        margin-left: 1%;
+    }
+    form{
+        border: 2px solid black;
+        border-radius: 10px;
+        align-items: start;
+        margin-left: 500px;
+        display: grid;
+        width: 400px;
+        background-color: black;
+        opacity: 100%;
+        height: 5cm;
+        justify-content: space-between;
+        
+    }
+    input{
+        border-radius: 15px;
+        margin-top: 8px;
+        margin-left: 1.2cm;
+        width: 300px;
+        padding: 5px 30px;
+    }
+    label{
+        margin-left: 1.6cm;
+        color: white;
+        font-size: .4cm;
+        margin-top: 20px;
+    }
+    .pwsd{
+        margin-top: -29px;
+    }
+    button{
+        border-radius: 18px;
+        align-items: center;
+        margin-left: 600px;
+        width: 4cm;
+        margin-top: 1cm;
+        margin-left: 46%;
+        padding: 5px 19px;
+        font-size: 16px;
+        color: black;
+    }
+    button:hover{
+        color: blue;
+    }
+    .cancel{
+        text-decoration: none;
+        color:black;
+    }
+    .login{
+        color: black;
+        text-decoration: none;
+    }
+    b{
+        background-color: none;
+        color: black;
+    }
+    b:hover{
+        color: blue;
+    }
+    img{
+        vertical-align: middle;
+        margin-left: 47%;
+        margin-top: 1cm;
+        height: 100px;
+        border-radius: 100%;
+    }
+    h2{
+        margin-left: 41%;
+        margin-top: 1.5cm;
+        font-size: 1cm;
+        
+    }
+</style>
+<title>log in</title>
+</head>
+<body>
+    <h2>Travel santorini</h2>
+    <div class="">
+        <img src="avatar.png" alt="profileicon">
+        <h1><strong>Log in</strong></h1>
+        <div>
+            <form action="">
+                <div class="eml">
+                    <label for="eml"><strong>Email address:</strong></label>
+                    <input type="text" placeholder="" id="eml" required/>
+                </div>
+
+                <div class="pwsd">
+                    <label for="pwsd"><strong>Password:</strong></label>
+                    <input type="text" placeholder="" id="pwsd" required/>
+                </div>
+
+            </form>
+            <div class="button">
+                <button value="login"><b><a href="profile.html">Log in</a></b></button>
+            </div>
+
+            <div class="button">
+                <button value="cancel"><a href="sign up.html"><b>Cancel</b></a><b></b></button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

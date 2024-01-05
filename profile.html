@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url("athens.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            font-size: 2cm;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 5px 8px 5px;
+        }
+        h1::first-letter{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: darkblue;
+            font-size: 3cm;
+            text-shadow: none;
+        }
+        ul{
+            text-align: center;
+            list-style: none;
+            margin: 0px;
+            padding: 0;
+            align-items: stretch;
+            align-content: stretch;
+            flex-direction: column;
+            height: 160px;
+            border-radius: 9px;
+        }
+        ul li{
+            float: left;
+            width: 250px;
+            height: 30px;
+            background-color: brown;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 2px;
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            
+        }
+        ul li ul li{
+            display: none;
+
+        }
+        ul li:hover{
+            display: block;
+            background-color: gray;
+        }
+        ul li ul li:hover{
+            display: block;
+        }
+        ul li:hover ul li{
+            display: block;
+        }
+        .navigationbar{
+            margin-left: 7cm;
+            margin-top: -.8cm;
+            color: white;
+            font-size: 16px;
+        }
+        i{
+        align-items: start;
+        }
+        h5{
+            margin-left: 4cm;
+            font-size: 12px;
+            color: black;
+            font-size: 16px;
+        }
+        .search{
+            margin-left: 26.5cm;
+            padding: 5px 20px;
+            width: 6cm;
+            margin-top: -4.32cm;
+            font-size: 18px;
+        }
+        .avatar{
+            margin-top: 1cm;
+            margin-left: 2cm;
+            margin-top: 2.3cm;
+        }
+        input{
+            padding: 5px 10px;
+            width: 6cm;
+            border-radius: 6px;
+        }
+        .icons{
+            color: black;
+            margin-top: 1cm;
+
+        }
+        h3{
+            margin-left: .8cm;
+        }
+        .bookings{
+            font-size: 14px;
+            
+        }
+        
+        .partnership{
+            background-color: black;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 335px;
+            float: left;
+            margin: 8px;
+            color: antiquewhite;
+        }
+        .partnership1{
+            background-color: black;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 338px;
+            float: left;
+            margin: 8px;
+            color: antiquewhite;
+            margin-left: 9px;
+            
+        }
+        .partnership2{
+            background-color: black;
+            border: 3px solid brown;
+            border-radius: 15px;
+            text-align: center;
+            width: 335px;
+            float: right;
+            margin: 8px;
+            color: antiquewhite;
+        
+        }
+        .partnertab{
+            border-radius: 15px;
+            background-color: lightgrey;
+            opacity: 80%;
+            color: red;
+            text-align: center;
+            border: 2px solid black;
+            margin-left: 11cm;
+            margin-top: -4.2cm;
+            margin-right: 1.1cm;
+          }
+          p{
+            margin-left: 8px;
+            font-size: 14px;
+          }
+          button{
+            margin-left: 3.5cm;
+            width: 3cm;
+            border-radius: 6px;
+          }
+          .p{
+            font-size: 14px;
+          }
+          .happy{
+            font-size: 30px;
+            margin-left: 41%;
+            color: darkblue;
+            margin-top: 5cm;
+          }
+          .copyright{
+            margin-left: 45%;
+            align-items: center;
+            font-size: 18px;
+            margin-top: .5cm;
+          }
+          
+          
+
+
+
+
+          
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>TRAVEL SANTORINI</b></h1>
+    <div class="icons">
+        <h5><i class="fa fa-home" style="font-size:36px;"></i><a href="index.html">Home</a></h5>
+    </div>
+
+    <div class="navigationbar">
+        <ul>
+            <li><a href="#"><b>Menu</b></a>
+                <ul>
+                    <li><a href="#"><b>Gallery</b></a></li>
+                    <li><a href="#"><b>Partners</b></a></li>
+                    <li><a href="login.html"><b>Sign out</b></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><b>Categories</b></a>
+                <ul>
+                    <li><a href="index.html"><b>Hot deals</b></a></li>
+                    <li><a href="#"><b>Top vacation tours</b></a></li>
+                </ul>
+               
+            </li>
+            <li><a href="#"><b>Enquiries</b></a>
+              <ul>
+                <li><a href="#"><b>FAQs</b></a></li>
+                <li><a href="#"><b>Talk to agent</b></a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="search">
+        <p><input type="text" placeholder="search..." id="search" <i class="fa fa-search"></i></i></p>
+    </div>
+
+    <div class="avatar">
+        <h2><img src="profile avatar.png" alt="profile avatar"> Stanly Anasi</h2>
+        <h3>Welcome back Stanly!</h3>
+    </div>
+   
+    <div class="bookings">
+        <p><b>Browse your catalogue to see all bookings that you have made</b></p>
+        <button><a href="bookings.html"><strong>Bookings</strong></a></button>
+    </div>
+
+    <div class="partnertab">
+        <h2>OUR PARTNERS</h2>
+        <P>This have been our loyal partners</P>
+
+        <div class="partnership">
+            <h4 class="#"><b><i class="glyphicon glyphicon-thumbs-up" style="font-size:24px"></i> JIJENGE GROUP</b></h4>
+            <div class="partners">
+              <p class="p">Partner of travel santorini since 2021</p>
+              <span>Devoted at providing quality cutomer service</span>
+              <p class="p">We look forward to serving you!</p>
+            </div>
+        </div>
+    
+        <div class="partnership1">
+            <h4 class="#"><b><i class="glyphicon glyphicon-thumbs-up" style="font-size:24px"></i> NCBA AFRICA</b></h4>
+            <div class="partners">
+              <p class="p">Partner of travel santorini since 2021</p>
+              <span>Devoted at providing quality cutomer service</span>
+              <p class="p">We look forward to serving you!</p>
+            </div>
+        </div>
+    
+        <div class="partnership2">
+            <h4 class="#"><b><i class="glyphicon glyphicon-thumbs-up" style="font-size:24px"></i> VIU-TRAVEL</b></h4>
+            <div class="partners">
+              <p class="p">Partner of travel santorini since 2022</p>
+              <span>Devoted at providing quality cutomer service</span>
+              <p class="p">We look forward to serving you!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer class="bottom">
+          <p class="happy"><span>&#9996;</span><b>Happy holidays</b></p>
+
+          <div class="copyright">
+            <p>
+                <i class="fa fa-copyright" aria-hidden="true"><b>Travel santorini</b></i>
+            </p>
+            <p>
+                <i class="fa fa-copyright" aria-hidden="true"><b>@2024</b></i>
+            </p>
+          </div>
+
+
+        </footer>
+
+    </div>
+
+    
+</body>
+</html>
